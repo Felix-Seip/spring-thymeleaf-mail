@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head></head>
+    <body>
+        <div>
+            <p>
+                Hallo, <br/>
+                Es sind mehrere Fitnesse Tests während des letzten Builds fehlgeschlagen. <br/>
+                Folgende Information zu den fehlgeschlagenen Tests: <br/>
+            </p>
+
+            <p>Repository: <span th:text="${repository}"/></p>
+            <p>Branch: <span th:text="${branch}"/></p>
+        </div>
+        <br/>
+        <div>
+            <p>
+                Viele Grüße,<br/>
+                Software Quality Squad
+            </p>
+        </div>
+        <img width="15%" height="15%" th:src="@{https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/ING_Primary_Logo_RGB.svg/1200px-ING_Primary_Logo_RGB.svg.png}" />
+    </body>
+</html>
